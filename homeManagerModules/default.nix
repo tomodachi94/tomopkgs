@@ -1,0 +1,3 @@
+{
+  prismlauncher = import ./prismlauncher;
+}
