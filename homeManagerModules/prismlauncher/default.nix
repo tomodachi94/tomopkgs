@@ -21,7 +21,7 @@ in {
         default = { };
         description = ''
           Configuration written to
-          <filename>$XDG_DATA_HOME/prismlauncher/prismlauncher.cfg</filename>
+          <filename>$XDG_DATA_HOME/PrismLauncher/prismlauncher.cfg</filename>
         '';
       };
 
@@ -31,7 +31,7 @@ in {
   config = mkIf cfg.enable {
     home.packages = [ cfg.package ];
 
-    xdg.dataFile."prismlauncher/prismlauncher.cfg".source =
+    xdg.dataFile."PrismLauncher/prismlauncher.cfg".source =
       iniFormat.generate "prismlauncher-config" cfg.settings;
   };
 }
