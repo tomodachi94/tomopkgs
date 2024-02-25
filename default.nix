@@ -17,6 +17,7 @@
   example-package = pkgs.callPackage ./pkgs/example-package { };
   spyglass = pkgs.callPackage ./pkgs/spyglass { };
   awesome-lint = pkgs.callPackage ./pkgs/awesome-lint { };
+  hugo-bearblog = pkgs.callPackage ./pkgs/hugo-bearblog { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
