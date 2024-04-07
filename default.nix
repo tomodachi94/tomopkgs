@@ -20,4 +20,5 @@
   hugo-bearblog = pkgs.callPackage ./pkgs/hugo-bearblog { };
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
+  ultisnips-vscode = pkgs.callPackage ./pkgs/ultisnips-vscode/default.nix { };
 }
