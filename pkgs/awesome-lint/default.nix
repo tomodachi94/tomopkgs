@@ -31,5 +31,6 @@ buildNpmPackage rec {
     maintainers = with maintainers; [ tomodachi94 ];
     mainProgram = "awesome-lint";
     platforms = platforms.all;
+    broken = true;
   };
 }
