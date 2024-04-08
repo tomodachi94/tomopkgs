@@ -12,6 +12,10 @@ stdenv.mkDerivation {
     cp -r "$src/Developer Color Picker/DeveloperColorPicker.colorPicker" $out/Library/ColorPickers
   '';
   meta = with lib; {
+    description = "";
+    homepage = "https://panic.com/blog/developer-color-picker-1-5/";
+    license = licenses.unfree;
     platforms = [ "x86_64-darwin" "aarch64-darwin" ];
+    maintainers = with maintainers; [ tomodachi94 ];
   };
 }
