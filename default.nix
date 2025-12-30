@@ -8,17 +8,18 @@
 
 { pkgs ? import <nixpkgs> { } }:
 
-{
-  # The `lib`, `modules`, and `overlay` names are special
-  lib = import ./lib { inherit pkgs; }; # functions
-  modules = import ./modules; # NixOS modules
-  overlays = import ./overlays; # nixpkgs overlays
+throw "This repository is deprecated! Check nixpkgs, or rip the source code from here if you really need something: https://github.com/tomodachi94/tomopkgs"
+# {
+#  # The `lib`, `modules`, and `overlay` names are special
+#  lib = import ./lib { inherit pkgs; }; # functions
+#  modules = import ./modules; # NixOS modules
+#  overlays = import ./overlays; # nixpkgs overlays
 
-  spyglass = pkgs.callPackage ./pkgs/spyglass { };
-  awesome-lint = pkgs.callPackage ./pkgs/awesome-lint { };
-  developercolorpicker = pkgs.callPackage ./pkgs/developercolorpicker { };
-  hugo-bearblog = pkgs.callPackage ./pkgs/hugo-bearblog { };
-  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
-  # ...
-  ultisnips-vscode = pkgs.callPackage ./pkgs/ultisnips-vscode/default.nix { };
-}
+#  spyglass = pkgs.callPackage ./pkgs/spyglass { };
+#  awesome-lint = pkgs.callPackage ./pkgs/awesome-lint { };
+#  developercolorpicker = pkgs.callPackage ./pkgs/developercolorpicker { };
+#  hugo-bearblog = pkgs.callPackage ./pkgs/hugo-bearblog { };
+#  # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
+#  # ...
+#  ultisnips-vscode = pkgs.callPackage ./pkgs/ultisnips-vscode/default.nix { };
+# }
